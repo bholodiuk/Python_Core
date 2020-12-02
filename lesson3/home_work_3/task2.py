@@ -13,11 +13,10 @@ def number_digits_sum(value:str):
         # Split @value string as list and convert every element to int.
         values_list = [int(digit) for digit in list(value)]
 
-        # Calculate sum of value digits.
+        # Calculate multiplication of value digits.
         value_multiplication = 1
         for digit in values_list:
             value_multiplication *= digit
-
 
         # Get revers order.
         value_backorder = value[::-1]
