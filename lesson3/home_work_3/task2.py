@@ -14,7 +14,10 @@ def number_digits_sum(value:str):
         values_list = [int(digit) for digit in list(value)]
 
         # Calculate sum of value digits.
-        value_sum = sum(values_list)
+        value_multiplication = 1
+        for digit in values_list:
+            value_multiplication *= digit
+
 
         # Get revers order.
         value_backorder = value[::-1]
@@ -22,9 +25,9 @@ def number_digits_sum(value:str):
         # Sorting list in direct order
         values_list.sort()
 
-        print(f'Digits sum = {value_sum}')
+        print(f'Digits multiplication = {value_multiplication}')
         print(f'Revers order = {value_backorder}')
-        print(f'Sorted digits = {str(values_list)}')
+        print(f'Sorted digits = {values_list}')
     else:
         print(f'Input value [{value}] does not meet the condition')
 
