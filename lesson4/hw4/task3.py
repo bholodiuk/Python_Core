@@ -10,7 +10,7 @@ def fibonacci_sequence(n):
     return n
 
 if __name__ == '__main__':
-    up_value = int(input('Enter fibonacci sequence max '))
+    up_value = int(input('Enter fibonacci sequence max value '))
 
     for value in range(up_value):
         if fibonacci_sequence(value) <= up_value:
